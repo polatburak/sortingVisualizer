@@ -5,6 +5,7 @@ import pygame_visualizer as pv
 pygame.init()
 from algorithms import bubble_sort as bsort
 from algorithms import insertion_sort as isort
+from algorithms import merge_sort as msort
 
 
 def generate_starting_list(n, min_val, max_val):
@@ -34,7 +35,8 @@ def main():
 	sorted = False
 
 	while run:
-		#clock.tick(60)
+		#clock = pygame.time.Clock()
+		#clock.tick(15)
 
 		if sorting:
 			try:
@@ -42,7 +44,6 @@ def main():
 			except StopIteration:
 				sorting = False
 				sorted = True
-
 		else:
 			pv.draw(draw_info, sorting_algo_name, ascending)
 
@@ -68,6 +69,7 @@ def main():
 			elif event.key == pygame.K_SPACE and sorting == False and sorted == False:
 				sorting = True
 				sorting_algorithm_generator = sorting_algorithm(draw_info, ascending)
+				print(lst)
 			elif event.key == pygame.K_a and not sorting:
 				ascending = True
 			elif event.key == pygame.K_d and not sorting:
@@ -78,6 +80,9 @@ def main():
 			elif event.key == pygame.K_b and not sorting:
 				sorting_algorithm = bsort.bubble_sort
 				sorting_algo_name = "Bubble Sort"
+			elif event.key == pygame.K_m and not sorting:
+				sorting_algorithm = msort.merge_sort
+				sorting_algo_name = "Merge Sort"
 
 
 	pygame.quit()
