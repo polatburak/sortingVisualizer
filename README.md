@@ -1,9 +1,10 @@
 # Sorting Algorithms Visualizer
 
 
-![sortingVisualizer](https://github.com/polatburak/sortingVisualizer/assets/100538337/5bff9df9-5f0d-423f-ada2-2d920c0f6b70)
+![sortingVisualizer](https://github.com/polatburak/sortingVisualizer/assets/100538337/345e9e79-9afe-4cf0-ae4f-e252e5c99a22)
 
-This project is a Sorting Algorithms Visualizer implemented in Python using the Pygame module. It allows you to interactively visualize and compare the performance of three different sorting algorithms: Bubble Sort, Iteration Sort, and Merge Sort. Sorting process can be visualized in both iterative and recursive forms using different algorithms.
+
+This project is a Sorting Algorithms Visualizer implemented in Python using the Pygame module. It allows you to interactively visualize and compare the performance of three different sorting algorithms: Bubble Sort, Iteration Sort and Merge Sort. Sorting process can be visualized in both iterative and recursive forms using different algorithms.
 
 ## Table of Contents
 - [Features](#features)
